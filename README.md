@@ -29,7 +29,7 @@ zplug "arzzen/calc.plugin.zsh"
 ### Usage
 ```bash
 # addition
-root@pc:~$ = 5+3
+root@pc:~$ calc 5+3
 8
 
 # multiplication
