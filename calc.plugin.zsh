@@ -1,7 +1,7 @@
 
 autoload -U zcalc
 function __calc_plugin {
-    zcalc -f -e "$*"
+    local expr="${@//[Xx]/*}"
+    zcalc -f -e "$expr"
 }
 aliases[calc]='noglob __calc_plugin'
-aliases[=]='noglob __calc_plugin'
